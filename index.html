@@ -1,13 +1,120 @@
 <html>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <style>
+    a {
+      text-decoration: none;
+    }
+    body {
+      font-family: Roboto,arial,sans-serif;
+      font-size: 14px;
+    }
+    div {
+      display: block;
+    }
+    button {
+      font-family: Roboto,arial,sans-serif;
+      padding: 5px 10px 5px 10px;
+      background-color: #f8f9fa;
+      border: 1px solid #f8f9fa;
+      border-radius: 4px;
+      color: #3c4043;
+      font-size: 14px;
+      margin: 11px 4px;
+      padding: 0px 16px;
+      line-height: 27px;
+      height: 36px;
+      min-width: 54px;
+      text-align: center;
+      cursor: pointer;
+      user-select: none;
+    }
+    #search-box {
+      width: 100%;
+      text-align: center;
+      height: 100%;
+    }
+    #main-search {
+
+    }
+    #search-button {
+      
+    }
+    #google-logo {
+      padding-bottom: 25px;
+    }
+    #search-bar {
+      background-color: transparent;
+      border: none;
+      margin: 0;
+      padding: 0;
+      color: rgba(0, 0, 0, .87);
+      word-wrap: break-word;
+      outline: none;
+      display: flex;
+      flex: 100%;
+      -webkit-tap-highlight-color: transparent;
+      margin-top: -37px;
+      height: 34px;
+      font-size: 16px;
+      align-items: center;
+
+    }
+    h2 {
+      font-size: 20px;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      padding: 6px;
+    }
+    .box {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .search-nest {
+      color: transparent;
+      flex: 100%;
+      white-space: pre;
+      height: 34px;
+
+    }
+  </style>
   <head>
     <title>Google</title>
-    <h2>About Store</h2>
   </head>
-  <body>
-    <h1></h1>
-    <form>
-      <input type="text" required>
-      <button type="submit" >Search Me</button>
-    </form>
-  </body>
+<div class="box">
+  <div class="Header">
+    <style>
+      a.header:first-of-type {
+        margin-left: 15px;
+      }
+      .top-bar {
+        display: inline-block;
+        padding: 5px;
+        margin: 0 5px;
+        color: #222;
+      }
+    </style>
+      <a class="header top-bar" href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a>
+      <a class="header top-bar" href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">Store</a>
+
+  </div>
+  
+  <div id="search-box">
+    <div id="main-search" class="search-group">
+      <img id="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
+    </div>
+    <div id="search-nest">
+      <form class="search-group">
+        <input id="search-bar" type="text" required>
+      </form>
+    </div>
+    <div id="search-button" class="seach-group">
+        <button type="submit" >Google Search</button><button type="submit">I'm Feeling Lucky</button>
+      </form>
+    </div>
+  </div>
+</div>
 </html>

@@ -1,0 +1,68 @@
+<!--open the document with <html> and then close it with </html> at the end of the code-->
+<html>
+    <!--You are able to import fonts from resources using this syntax when calling the font it is case sensitive and, if there is
+    a space it needs to be wrapped in quotes like "Comic Sans"-->
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <!--head is used to create a header for the webpage-->
+    <head>
+        <!--The <title> element sets the name of the tab for the site-->
+        <title>Notes</title>
+        <!--Adding the header can be stylized with any element-->
+        <h1 class="blue-text silver-background">Notes for html and css:</h1>
+    </head>
+    <div>
+    <p> The header 1-6 and p elements can be used to stylize text.
+        <h1>h1</h1>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <h4>h4</h4>
+        <h5>h5</h5>
+        <h6>h6</h6>
+        <p>p</p>
+    </p>
+    </div>
+    <!--ul stands for unorganized list and creates a bulletted list-->
+    <ul>
+        <li>An</li>
+        <li>unorganized</li>
+        <li>list</li>
+        <li>consists of</li>
+        <li>bullet points</li>
+    </ul>
+    <!--ol stands for organized list and creates a numbered list-->
+    <ol class="thick-black-border">
+        <li>An</li>
+        <li>organized</li>
+        <li>list</li>
+        <li>consists of</li>
+        <li>numbered items
+        </li>
+    </ol>
+    <!--the style attribute allows you to modify the style of elements or create a class that assign the style that way.-->
+    <style>
+        /*Comments work with different syntax inside of a css style classification*/
+        /*An example of changing the style of an element globally*/
+        h1 {
+            color: red;
+            font-size: 50px;
+            font-family: 'Segoe UI';
+            font-variant: small-caps;
+        }
+        /*The other method of changing a style on text is through assigning a class.*/
+        /*In this example I overide the color change that was previously made to the header of the page by creating an attribute 
+        for blue text and assign it to the header*/
+        .blue-text {
+            color: blue;
+            font-family: Lobster, monospace;
+        }
+        .thick-black-border {
+            border-color: black;
+            border-width: 15px;
+            border-style: solid;
+        }
+        .silver-background {
+            background-color: silver;
+        }
+    </style>
+
+</html>
